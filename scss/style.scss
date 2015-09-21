@@ -16,18 +16,30 @@ body {
   clear: both;
 
   .member {
-  float: left;
-  border: 1px solid gray;
-  margin: $imageMargin;
-  padding: $imagePadding;
+    float: left;
+    border: 1px solid gray;
+    margin: $imageMargin;
+    padding: $imagePadding;
+    img {
+      width: $imageWidth;
+      height: $imageHeight;
+    }
+    img.blur {
+      display: none;
+    }
+    div.name {
+      text-align: center;  
+    }
   }
+  .member:hover {
 
-  .member img {
-  width: $imageWidth;
-  height: $imageHeight;
-  }
+    img.blur {
+      display: inline;
+    }
 
-  .member div.name {
-  text-align: center;  
+    img.normal {
+      display: none;
+    }
   }
+  
 }

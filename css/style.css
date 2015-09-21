@@ -11,10 +11,16 @@ body {
     border: 1px solid gray;
     margin: 10px;
     padding: 6px; }
-  #team-members .member img {
-    width: 200px;
-    height: 200px; }
-  #team-members .member div.name {
-    text-align: center; }
+    #team-members .member img {
+      width: 200px;
+      height: 200px; }
+    #team-members .member img.blur {
+      display: none; }
+    #team-members .member div.name {
+      text-align: center; }
+  #team-members .member:hover img.blur {
+    display: inline; }
+  #team-members .member:hover img.normal {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
