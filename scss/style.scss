@@ -1,24 +1,33 @@
+$primaryColor: #FF0000;
+$imageWidth: 200px;
+$imageHeight: 200px;
+$imageMargin: 10px;
+$imagePadding: 6px;
+
 body {
   font-family: Verdana;
   font-size: 1.5em;
+  h1 {
+    color: $primaryColor;
+  }
 }
 
 #team-members {
   clear: both;
-}
 
-#team-members .member {
+  .member {
   float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px;
-}
+  border: 1px solid gray;
+  margin: $imageMargin;
+  padding: $imagePadding;
+  }
 
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-}
+  .member img {
+  width: $imageWidth;
+  height: $imageHeight;
+  }
 
-#team-members .member div.name {
+  .member div.name {
   text-align: center;  
+  }
 }
