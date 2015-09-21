@@ -3,6 +3,7 @@ $imageWidth: 200px;
 $imageHeight: 200px;
 $imageMargin: 10px;
 $imagePadding: 6px;
+$imageBorderRadius: 15px;
 
 body {
   font-family: Verdana;
@@ -17,14 +18,15 @@ body {
 
   .member {
     float: left;
-    border: 1px solid gray;
+    /*border: 1px solid gray;*/
     margin: $imageMargin;
     padding: $imagePadding;
     img {
       width: $imageWidth;
       height: $imageHeight;
+      border-radius: $imageBorderRadius;
     }
-    img.blur {
+    img.normal {
       display: none;
     }
     div.name {
@@ -33,11 +35,11 @@ body {
   }
   .member:hover {
 
-    img.blur {
+    img.normal {
       display: inline;
     }
 
-    img.normal {
+    img.blur {
       display: none;
     }
   }
