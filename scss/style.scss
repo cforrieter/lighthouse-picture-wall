@@ -21,6 +21,7 @@ body {
     /*border: 1px solid gray;*/
     margin: $imageMargin;
     padding: $imagePadding;
+    transition: 0.75s;
     img {
       width: $imageWidth;
       height: $imageHeight;
@@ -34,7 +35,8 @@ body {
     }
   }
   .member:hover {
-
+    transform: scale(1.15);
+    
     img.normal {
       display: inline;
     }
